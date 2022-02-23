@@ -9,6 +9,8 @@ LINK TO PROJECT: www.hiremefordevops.com
 3. Expansion and growing for bigger load and audience
 4. Scalling the project
 5. Listing all VPC and Subnets
+6. Things that can be improved
+7. Ideas for real-life project creation
 
 
 
@@ -127,9 +129,22 @@ These lines load data from .txt file into DB columns we need. Well, not the best
 Check if all data is imported correctly:
 
                               Select * from networks;
-                              
+
 Now we have a running website with a DB behind it, for now with Apache, later for more traffic we could utilize NginX. Improve the DB handling for the IP INET_ATON conversions and add to cron jobs the oneliners for periodically extracting the network info. Maybe a monitoring with NAgios server to ping if something is missing or not responding?
 
 I really had a lot of fun doing this project, I hope I am not overdoing the text here and that you find the domain name funny for this as I did!
 
 I am looking forward to be working with the ZetaHosting DevOps team and trully eager to learn new things, ones I get a docking to not be working only on my laptop screen as I currently have made this lol.
+
+                              Things that can be improved
+SSL ceritficates and HTTPS would be great in these days to make users more comfortable. 
+
+
+                              Ideas for real-life project creation:
+As my wife's little brother recently won a mental arithmentics competition in Dubai which was real fun as much as the expenses for the trip too. The SmartyKids center in Vratsa would like to seperate itself from the brand name which they get a 20% increase in the payment they make for it every year, which for the low standard in Vratsa, kinda kills the business side and also lower the chance of focusing resources into trully motivated teachers to lead some of the online classes.
+So some different approaches to make a math calculator which flashesh different colored numbers in the screen, depending on the color you add, substract, multiply, etc. which seems to be great mental exercise for all ages as this was from a test done for the aviation tests for mental toughness.
+
+A database for the users will be needed. A Database for the scores and challenges which are per day, per week, etc.
+Some beatuful automation with Python to webscrape the web for recent news of any math competitions around the world, although they might need to be translated, but not a must as most kids are learning outside of Bulgaria and are in UK so they will be fine.
+
+Any ideas on that too would be appreciated or if we get to be working together, we could discuss these kinds of things to create an online free internships to attract people and get a free marketing viewerships.
