@@ -124,3 +124,12 @@ First we enter MariaDB and create a DB. Then we create a table with the columns 
 
 These lines load data from .txt file into DB columns we need. Well, not the best solution but I really have no idea how to make it only in one DB table otherwise without junk/filler data.
 
+Check if all data is imported correctly:
+
+                              Select * from networks;
+                              
+Now we have a running website with a DB behind it, for now with Apache, later for more traffic we could utilize NginX. Improve the DB handling for the IP INET_ATON conversions and add to cron jobs the oneliners for periodically extracting the network info. Maybe a monitoring with NAgios server to ping if something is missing or not responding?
+
+I really had a lot of fun doing this project, I hope I am not overdoing the text here and that you find the domain name funny for this as I did!
+
+I am looking forward to be working with the ZetaHosting DevOps team and trully eager to learn new things, ones I get a docking to not be working only on my laptop screen as I currently have made this lol.
