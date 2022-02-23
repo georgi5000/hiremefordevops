@@ -23,10 +23,12 @@ LINK TO PROJECT: www.hiremefordevops.com
 
 
           STEPS:
-1. LAMP stack installation: Amazon has a great guide to install it from here: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html
-2. Domain registration and purchase is optional or only for fun.
-3. How_Not_to_Waste_time_like_Me: If you want to buy a domain for the website, do it now and register it with their ELASTIC DOMAIN NOW BEFORE CONTINUING: https://aws.amazon.com/getting-started/hands-on/get-a-domain/ (Otherwise you may face hours of troubleshooting and pointless search as when Wordpress gets installed it statically assigns the IP somewhere in its wp_config DB table of the machine before switching to the Elastic IP and your domain will not work at all). Test if the domain works with the Apache/NginX test pages or the phpinfo.php one. The first simptoms are slow DNS resolving and page even not loading until it reaches the TTL you set for the domain in AWS.
-4. Wordpress install and configuration https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
+1. LAMP stack installation: Amazon has a great guide to install it from here:
+          https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html
+          
+3. Domain registration and purchase is optional or only for fun.
+4. How_Not_to_Waste_time_like_Me: If you want to buy a domain for the website, do it now and register it with their ELASTIC DOMAIN NOW BEFORE CONTINUING: https://aws.amazon.com/getting-started/hands-on/get-a-domain/ (Otherwise you may face hours of troubleshooting and pointless search as when Wordpress gets installed it statically assigns the IP somewhere in its wp_config DB table of the machine before switching to the Elastic IP and your domain will not work at all). Test if the domain works with the Apache/NginX test pages or the phpinfo.php one. The first simptoms are slow DNS resolving and page even not loading until it reaches the TTL you set for the domain in AWS.
+5. Wordpress install and configuration https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
 6. systemctl enable httpd, mariadb to make sure everything boots up after a reboot.
 
 The site should be up and running. Test with your domain.
