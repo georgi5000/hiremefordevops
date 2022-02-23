@@ -62,8 +62,10 @@ Here we get an output like this one:
           netmast 255.255.240.0 
           boardcast 172.31.95.255
 We just need to get this to fill in a seperate file for the netmask and the IP and netmask details from the "awk" filter are needed so we don't need all of them.
-          ifconfig | grep inet | grep -v 127.0.0.1 | grep -v inet6 | awk '{print $2}' > network_ip.txt
-          ifconfig | grep inet | grep -v 127.0.0.1 | grep -v inet6 | awk '{print $4}' > network_mask.txt
+
+                    ifconfig | grep inet | grep -v 127.0.0.1 | grep -v inet6 | awk '{print $2}' > network_ip.txt
+                    
+                    ifconfig | grep inet | grep -v 127.0.0.1 | grep -v inet6 | awk '{print $4}' > network_mask.txt
 
 Also, the IP for the VPC website we can simply ping and filter it with this:
 
